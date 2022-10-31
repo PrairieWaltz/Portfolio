@@ -18,56 +18,237 @@
     <title>Scott Freestone Portfolio</title>
   </head>
   <body>
-    <!-- HERO/LANDING -->
-    <section class="hero" id="hero">
-      <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <section class="navigation">
       <nav>
         <img class="logo" src="/images/PWD LOGO(light).png" alt="logo" />
         <ul>
           <li>
-            <a href="http://www.github.com"
+            <a href="https://github.com/PrairieWaltz"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="http://www.linkedin.com">
+            <a href="https://www.linkedin.com/in/scott-freestone/">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="http://www.twitter.com">
+            <a href="https://twitter.com/PrairieWaltz">
               <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
           <li>|</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </section>
+    <!-- HERO/LANDING -->
+    <section class="hero" id="hero">
+      <div class="background">
+        <div class="overlay"></div>
+      </div>
       <div class="hero-landing">
         <div class="hero-text">
-          <h1>Scott Freestone</h1>
+          <h1>Scott</h1>
+          <h1 class="last">Freestone</h1>
           <p>Full Stack Developer</p>
+          <p class="hero-text-sub">
+            < & forever learner in search of code nirvana >
+          </p>
           <div class="buttons">
-            <div class="hero-btn"><a href="">Projects</a></div>
-            <div class="hero-btn2"><a href="">About</a></div>
+            <div class="hero-btn"><a href="#projects">Projects</a></div>
+            <div class="hero-btn2"><a href="#about">About</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-text">
+          <h1>Let's build something great together</h1>
+          <p>
+            Do you need a better way to inform, covert and inspire both your
+            potential and current client base. <br /><br />
+            From simple and clean landing pages to full-stack web and mobile
+            apps for community and commerce...there's nothing we can't do
+            together.
+          </p>
+
+          <ul class="skills">
+            <li>
+              <i class="fa-brands fa-square-js jello-horizontal"></i>
+            </li>
+            <li><i class="fa-brands fa-react jello-horizontal"></i></li>
+            <li><i class="fa-brands fa-node-js jello-horizontal"></i></li>
+          </ul>
+          <ul class="skills2">
+            <li><i class="fa-brands fa-html5 jello-horizontal"></i></li>
+            <li><i class="fa-brands fa-css3-alt jello-horizontal"></i></li>
+            <li><i class="fa-brands fa-github jello-horizontal"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+
+    <section class="about-section" id="about">
+      <div class="information">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem,
+          adipisci officiis dolor fugit, vitae fuga hic deserunt quam
+          necessitatibus odit. Accusamus necessitatibus facere optio culpa ipsum
+          officiis ex modi.
+          <br /><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          voluptatem recusandae nisi consectetur odit quisquam maiores ad labore
+          eligendi. Provident vel praesentium, eius aliquid velit non amet alias
+          minima eligendi.
+        </p>
+        <br /><br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+          quis! Odit rerum reiciendis velit a accusamus id, aut hic sunt ab est,
+          officia ullam, animi dolorum ducimus soluta repellendus quae. Lorem
+          ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+      </div>
+      <div class="headshot-container">
+        <img class="headshot" src="/images/roundDev.png" alt="headshot" />
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project-section" id="projects">
+      <div class="background2">
+        <div class="overlay2"></div>
+      </div>
+      <h2 class="project-text-header">Project Portfolio</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="/images/CRUDCampScreenshot.png"
+            alt=""
+          />
+          <h4>CRUD Camp</h4>
+          <p class="project-sub">
+            Full CRUD web app that lets you create and share your favorite
+            camping sites throughout the world. Log-In to write reviews, upload
+            pictures and share info! <br />
+            <br />
+            Javascript | Node.js | MongoDB
+          </p>
+          <hr />
+          <div class="project-links">
+            <p class="project-sub">
+              <a href="https://floating-shelf-70963.herokuapp.com/">View SITE</a
+              ><i class="fa-solid fa-computer"></i>
+            </p>
+            <p class="project-sub">|</p>
+            <p class="project-sub">
+              <a href="https://github.com/PrairieWaltz/Crud_Camp_Project"
+                >View CODE</a
+              ><i class="fa-brands fa-github"></i>
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="/images/DMVCCSlug2.png" alt="" />
+          <h4>DMVCC Website</h4>
+          <p class="project-sub">
+            Static web page for DMVCC. Info forward design concept with the
+            intention of helping potential new members learn more and provide
+            ease of contact. <br />
+            <br />
+            HTML | CSS | Javascript
+          </p>
+          <hr />
+          <div class="project-links">
+            <p class="project-sub">
+              <a href="https://www.ctlaltdeceased.com">View SITE</a
+              ><i class="fa-solid fa-computer"></i>
+            </p>
+            <p class="project-sub">|</p>
+            <p class="project-sub">
+              <a href="https://github.com/PrairieWaltz/DMVCC-vanilla"
+                >View CODE</a
+              ><i class="fa-brands fa-github"></i>
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="/images/KHCSlug3.png" alt="" />
+          <h4>Hufnagle Cello Studio</h4>
+          <p class="project-sub">
+            Static landing page for working private cello studio. Design focus
+            for driving traffic to contact form and depper info on teacher and
+            method. <br />
+            <br />
+            HTML | CSS | Javascript
+          </p>
+          <hr />
+          <div class="project-links">
+            <p class="project-sub">
+              <a href="">View SITE</a><i class="fa-solid fa-computer"></i>
+            </p>
+            <p class="project-sub">|</p>
+            <p class="project-sub">
+              <a href="">View CODE</a><i class="fa-brands fa-github"></i>
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="/images/SpotFinderLogo2.png" alt="" />
+          <h4>SpotFinder Web App</h4>
+          <p class="project-sub">
+            Looking for a great place to skate in a new city? This full-stack
+            CRUD app will let you log-in, find or post a new spot and rate it
+            for others to see. <br />
+            <br />
+            Javascript | Node.js | MongoDB
+          </p>
+          <hr />
+          <div class="project-links">
+            <p class="project-sub">
+              <a href="">View SITE</a><i class="fa-solid fa-computer"></i>
+            </p>
+            <p class="project-sub">|</p>
+            <p class="project-sub">
+              <a href="">View CODE</a><i class="fa-brands fa-github"></i>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="about" id="about"></section>
-
-    <!-- PROJECTS -->
-    <section class="projects" id="projects"></section>
-
     <!-- CONTACT -->
-    <section class="contact" id="contact"></section>
+    <section class="contact-section" id="contact">
+      <div class="contact">
+        <div class="form" data-aos="fade-up">
+          <h2>Contact:</h2>
+          <div class="submit">
+            <input type="text" name="" placeholder="Name:" />
+            <input type="email" name="" placeholder="Email:" />
+            <textarea
+              name=""
+              placeholder="Message:"
+              id=""
+              cols="30"
+              rows="7"
+            ></textarea>
+            <a href="#">Send</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer" id="footer">
+      <p>&copy;PrairieWaltz Design 2022</p>
+      <p>scott@prairiewaltz.com</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
