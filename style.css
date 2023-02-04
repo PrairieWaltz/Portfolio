@@ -45,6 +45,27 @@ li {
   text-decoration: none;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: whitesmoke;
+}
+
+.footer {
+  border-top: 2px solid #22223b;
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 1.25rem;
+  color: #22223b;
+  justify-content: flex-start;
+}
+
 /* HERO IMAGE AND OVERLAY NOTE */
 
 .background {
@@ -158,7 +179,7 @@ li {
 .hero-btn {
   width: 145px;
   /* height: 40px; */
-  background-color: #5e4d49;
+  background-color: #9a8c98;
   border-radius: 20px;
   cursor: pointer;
   text-align: center;
@@ -166,13 +187,14 @@ li {
   padding: 0.35rem;
   font-size: 1.75rem;
   text-decoration: none;
-  color: #f2e9e4;
+  color: black;
   border: 1px solid #5e4d49;
 }
 
 .hero-btn:hover {
   background-color: #22223b;
   border: 1px solid #07072b;
+  color: whitesmoke;
   transition: 0.5s;
 }
 
@@ -285,13 +307,15 @@ li {
 
 .project-container {
   display: flex;
-  justify-content: space-around;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .project-card {
   width: 20rem;
-  /* height: 30rem; */
+  height: 30rem;
   border-radius: 8px;
   border: 1px solid whitesmoke;
   box-shadow: 15px 15px 15px #010116;
@@ -308,7 +332,7 @@ li {
   width: 80%;
   margin-top: 1rem;
   border: 1px solid #22223b;
-  box-shadow: 5px 5px 35px #534d4ccb;
+  /* box-shadow: 5px 5px 30px #534d4ccb; */
   border-radius: 4px;
 }
 
@@ -381,27 +405,6 @@ li {
   /* border: 1px solid #22223b; */
 }
 
-/* FOOTER */
-
-footer {
-  background-color: whitesmoke;
-}
-
-.footer {
-  border-top: 2px solid #22223b;
-  padding: 2rem 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer p {
-  font-size: 1.25rem;
-  color: #22223b;
-  justify-content: flex-start;
-}
-
 /* ANIMATIONS */
 
 .jello-horizontal:hover {
@@ -428,5 +431,18 @@ footer {
   }
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+
+.shadow-drop-left-right:hover {
+  animation: shadow-drop-left-right 0.9s linear both;
+}
+@keyframes shadow-drop-left-right {
+  0% {
+    box-shadow: 5px 5px 35px #534d4ccb;
+  }
+  100% {
+    box-shadow: -12px 0 20px -12px rgba(255, 255, 255, 0.55),
+      12px 0 20px -12px rgba(255, 255, 255, 0.55);
   }
 }
