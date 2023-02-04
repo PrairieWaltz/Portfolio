@@ -15,7 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Scott Freestone Portfolio</title>
+    <script defer src="script.js"></script>
+    <title>Scott Freestone</title>
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -59,8 +60,12 @@
             < & forever learner in search of code nirvana >
           </p>
           <div class="buttons">
-            <div class="hero-btn"><a href="#projects">Projects</a></div>
-            <div class="hero-btn2"><a href="#about">About</a></div>
+            <a href="#projects">
+              <button class="hero-btn">Projects</button>
+            </a>
+            <a href="#about">
+              <button class="hero-btn2">About</button>
+            </a>
           </div>
         </div>
       </div>
@@ -94,7 +99,7 @@
 
     <section class="about-section" id="about">
       <div class="information">
-        <h2>About Me</h2>
+        <h2>Let's get to know each other...</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem,
           adipisci officiis dolor fugit, vitae fuga hic deserunt quam
@@ -115,7 +120,11 @@
         </p>
       </div>
       <div class="headshot-container">
-        <img class="headshot" src="/images/roundDev.png" alt="headshot" />
+        <img
+          class="headshot"
+          src="/images/portfolio hero (1).png"
+          alt="headshot"
+        />
       </div>
     </section>
 
@@ -127,96 +136,100 @@
       <h2 class="project-text-header">Project Portfolio</h2>
       <div class="project-container">
         <div class="project-card">
-          <img
-            class="project-image"
-            src="/images/CRUDCampScreenshot.png"
-            alt=""
-          />
-          <h4>CRUD Camp</h4>
+          <img class="project-image" src="/images/Logo-3D.png" alt="" />
+          <h4>SpotFinder Web App</h4>
           <p class="project-sub">
-            Full CRUD web app that lets you create and share your favorite
-            camping sites throughout the world. Log-In to write reviews, upload
-            pictures and share info! <br />
+            Looking for a great place to skate in a new city? <br />
+            This full-stack CRUD app will let you log-in, find or post a new
+            spot and rate it for others to see. <br />
             <br />
             Javascript | Node.js | MongoDB
           </p>
           <hr />
           <div class="project-links">
             <p class="project-sub">
-              <a href="https://floating-shelf-70963.herokuapp.com/">View SITE</a
+              <a href="https://spotfinder.herokuapp.com/">View SITE</a
               ><i class="fa-solid fa-computer"></i>
             </p>
             <p class="project-sub">|</p>
             <p class="project-sub">
-              <a href="https://github.com/PrairieWaltz/Crud_Camp_Project"
-                >View CODE</a
+              <a href="https://github.com/PrairieWaltz/spot_finder">View CODE</a
               ><i class="fa-brands fa-github"></i>
             </p>
           </div>
         </div>
         <div class="project-card">
-          <img class="project-image" src="/images/DMVCCSlug2.png" alt="" />
-          <h4>DMVCC Website</h4>
-          <p class="project-sub">
-            Static web page for DMVCC. Info forward design concept with the
-            intention of helping potential new members learn more and provide
-            ease of contact. <br />
-            <br />
-            HTML | CSS | Javascript
-          </p>
-          <hr />
-          <div class="project-links">
-            <p class="project-sub">
-              <a href="https://www.ctlaltdeceased.com">View SITE</a
-              ><i class="fa-solid fa-computer"></i>
-            </p>
-            <p class="project-sub">|</p>
-            <p class="project-sub">
-              <a href="https://github.com/PrairieWaltz/DMVCC-vanilla"
-                >View CODE</a
-              ><i class="fa-brands fa-github"></i>
-            </p>
-          </div>
-        </div>
-        <div class="project-card">
-          <img class="project-image" src="/images/KHCSlug3.png" alt="" />
+          <img class="project-image" src="/images/KHCSlug.png" alt="" />
           <h4>Hufnagle Cello Studio</h4>
           <p class="project-sub">
             Static landing page for working private cello studio. Design focus
-            for driving traffic to contact form and depper info on teacher and
-            method. <br />
+            for driving traffic to contact form and deeper info on teacher and
+            method. In the process of building enrolled student portal for
+            scheduling and private messaging.<br />
             <br />
             HTML | CSS | Javascript
           </p>
           <hr />
           <div class="project-links">
             <p class="project-sub">
-              <a href="">View SITE</a><i class="fa-solid fa-computer"></i>
+              <a href="https://www.google.com">View SITE</a
+              ><i class="fa-solid fa-computer"></i>
             </p>
             <p class="project-sub">|</p>
             <p class="project-sub">
-              <a href="">View CODE</a><i class="fa-brands fa-github"></i>
+              <a href="https://www.github.com">View CODE</a
+              ><i class="fa-brands fa-github"></i>
             </p>
           </div>
         </div>
         <div class="project-card">
-          <img class="project-image" src="/images/SpotFinderLogo2.png" alt="" />
-          <h4>SpotFinder Web App</h4>
+          <img class="project-image" src="/images/FamilyDoc-Main.png" alt="" />
+          <h4>Family Planner Google Docs Clone</h4>
           <p class="project-sub">
-            Looking for a great place to skate in a new city? This full-stack
-            CRUD app will let you log-in, find or post a new spot and rate it
-            for others to see. <br />
+            Google Doc clone that can be run on a local instance for family use.
+            Add, Edit or delete items in real time. Multiple people can be
+            working and editing the same doc simultaneously. <br />
             <br />
-            Javascript | Node.js | MongoDB
+            React | Javascript | Socket.io | Quill
           </p>
           <hr />
           <div class="project-links">
             <p class="project-sub">
-              <a href="">View SITE</a><i class="fa-solid fa-computer"></i>
+              <a href="./family-planner.html">View Example</a>
             </p>
             <p class="project-sub">|</p>
             <p class="project-sub">
-              <a href="">View CODE</a><i class="fa-brands fa-github"></i>
+              <a href="https://github.com/">View CODE</a
+              ><i class="fa-brands fa-github"></i>
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="/images/sporkifyScreenshot.png"
+            alt=""
+          />
+          <h4>Sporkify</h4>
+          <p class="project-sub">
+            Search and bookmark favorite recipes from around the internet from
+            an index of 100's of common search terms. Query by ingredient or
+            dish name for widest results. Add your personal favorites to keep a
+            personal recipe book.<br />
+            <br />
+            Javascript | SASS | API
+          </p>
+          <hr />
+          <div class="project-links">
+            <p class="project-sub">
+              <a href="https://sporkify.netlify.app/">View SITE</a
+              ><i class="fa-solid fa-computer"></i>
+            </p>
+            <p class="project-sub">|</p>
+            <p class="project-sub">
+              <a href="https://github.com/PrairieWaltz/sporkify_app"
+                >View CODE</a
+              ><i class="fa-brands fa-github"></i>
             </p>
           </div>
         </div>
@@ -228,28 +241,53 @@
       <div class="contact">
         <div class="form" data-aos="fade-up">
           <h2>Contact:</h2>
-          <div class="submit">
-            <input type="text" name="" placeholder="Name:" />
-            <input type="email" name="" placeholder="Email:" />
+          <form
+            action="https://formsubmit.co/prairiewaltz@gmail.com"
+            method="POST"
+            class="submit"
+          >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name:"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email:"
+              required
+            />
             <textarea
-              name=""
+              name="textarea"
+              type="textarea"
               placeholder="Message:"
-              id=""
+              id="message"
               cols="30"
               rows="7"
+              required
             ></textarea>
-            <a href="#">Send</a>
-          </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/index.html"
+            />
+            <button type="submit">Send</button>
+          </form>
+          <!-- <a href="https://formsubmit.co/el/somamo" target="_blank"
+            >Email us</a
+          > -->
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer" id="footer">
-      <p>&copy;PrairieWaltz Design 2022</p>
-      <p>scott@prairiewaltz.com</p>
+      <p>&copy;PrairieWaltz Design 2023</p>
+      <p>scott@scottfreestone.com</p>
     </footer>
-
-    <script src="script.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   </body>
 </html>
