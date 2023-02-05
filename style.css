@@ -16,7 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #07072b;
-  z-index: 10000;
+  z-index: 100000;
   width: 100%;
   position: fixed;
 }
@@ -85,7 +85,7 @@ footer {
   opacity: 0.8;
 }
 
-/* HERO LANDING NOTE */
+/* HERO LANDING NOTE NOTE*/
 
 .hero {
   height: 100vh;

@@ -1,5 +1,3 @@
-'use strict';
-
 // const emailInput = document.getElementById('email').value;
 
 // function sendEmail() {
