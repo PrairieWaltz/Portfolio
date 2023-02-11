@@ -15,11 +15,11 @@
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
+.modal-content-sf {
+  background-color: #4a4e69;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #4a4e69;
   width: 80%;
   border-radius: 8px;
 }
@@ -56,11 +56,11 @@
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
+.modal-content-Cello {
+  background-color: #4a4e69;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #4a4e69;
   width: 80%;
   border-radius: 8px;
 }
@@ -96,11 +96,11 @@
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
+.modal-content-Session {
+  background-color: #4a4e69;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #4a4e69;
   width: 80%;
   border-radius: 8px;
 }
@@ -137,11 +137,11 @@
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
+.modal-content-Planner {
+  background-color: #4a4e69;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #4a4e69;
   width: 80%;
   border-radius: 8px;
 }
@@ -178,11 +178,11 @@
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #f2e9e4;
+.modal-content-Sporkify {
+  background-color: #4a4e69;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #4a4e69;
   width: 80%;
   border-radius: 8px;
 }
