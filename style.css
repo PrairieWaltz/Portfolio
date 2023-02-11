@@ -74,7 +74,7 @@ footer {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
 }
 
@@ -413,6 +413,47 @@ footer {
   background: whitesmoke;
   transition: 0.5s;
   /* border: 1px solid #22223b; */
+}
+
+/* MODAL */
+/* Style the modal */
+#myModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ANIMATIONS */
@@ -843,6 +884,173 @@ footer {
 
   .information {
     z-index: 100;
+  }
+
+  /* PROJECTS */
+
+  .project-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .project-text-header {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  .project-card {
+    width: 17rem;
+    height: auto;
+  }
+
+  .project-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .project-sub {
+    font-size: 0.8rem;
+  }
+
+  .project-links p {
+    font-size: 0.8rem;
+  }
+
+  .project-sub a {
+    font-size: 0.9rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .project-image {
+    width: 80%;
+    margin-top: 1.5rem;
+    border: 1px solid #22223b;
+    /* box-shadow: 5px 5px 30px #534d4ccb; */
+    border-radius: 4px;
+  }
+
+  /* CONTACT */
+
+  .contact .form {
+    width: 100%;
+  }
+
+  .contact .form h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contact .form .submit input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit textarea::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit button {
+    font-size: 0.75rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 1rem 1rem;
+  }
+
+  .footer p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  nav {
+    padding: 0.35rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* HERO PAGE */
+
+  .hero-landing {
+    top: 65%;
+    left: 39%;
+  }
+
+  .hero-text {
+    padding-top: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-text .last {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  /* HERO BUTTONS */
+
+  .hero-btn {
+    width: 85px;
+    margin-top: 0.2rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-btn2 {
+    width: 85px;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+  }
+
+  /* ABOUT */
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 2.15rem;
+  }
+
+  .about-section h3 {
+    font-size: 1rem;
+  }
+
+  .about-section p {
+    font-size: 0.85rem;
+  }
+
+  .headshot {
+    width: 100%;
+    margin-left: 10rem;
+    margin-top: -1rem;
+    /* padding-bottom: -5rem; */
+  }
+
+  .information {
+    width: 90%;
+    z-index: 100;
+    margin-top: -3rem;
   }
 
   /* PROJECTS */

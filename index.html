@@ -23,7 +23,7 @@
     <section class="navigation">
       <nav>
         <a href="#">
-          <img class="logo" src="/images/PWD LOGO(light).png" alt="logo" />
+          <img class="logo" src="/images/pwdNavLogo.png" alt="logo" />
         </a>
         <ul>
           <li>
@@ -100,6 +100,13 @@
     <!-- ABOUT -->
 
     <section class="about-section" id="about">
+      <div class="headshot-container">
+        <img
+          class="headshot"
+          src="/images/portfolio hero (1).png"
+          alt="headshot"
+        />
+      </div>
       <div class="information">
         <h2>Let's get to know each other...</h2>
 
@@ -137,14 +144,24 @@
           of those wandering eyes on the internet into sales for you.
         </p>
       </div>
-      <div class="headshot-container">
-        <img
-          class="headshot"
-          src="/images/portfolio hero (1).png"
-          alt="headshot"
-        />
-      </div>
     </section>
+
+    <!-- MODAL -->
+
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Welcome to Our Website!</h2>
+        <p>We're glad you're here. Check out what we have to offer.</p>
+        <p>Click anywhere outside the modal to close it.</p>
+      </div>
+    </div>
+
     <!-- PROJECTS -->
     <section class="project-section" id="projects">
       <!-- <div class="background2">
@@ -154,7 +171,13 @@
       <div class="project-container">
         <!-- SPOTFINDER -->
         <div class="project-card">
-          <img class="project-image" src="/images/Logo-3D.png" alt="" />
+          <span id="myBtn">
+            <img
+              class="project-image"
+              src="/images/spotFinderProjImgMain.png"
+              alt=""
+            />
+          </span>
           <h4>SpotFinder Web App</h4>
           <p class="project-sub">
             Looking for a great place to skate in a new city? <br />
@@ -163,7 +186,7 @@
             post and delete unique spots while rating other users submissions!
             <br />
             <br />
-            Javascript | Node.js | MongoDB
+            Javascript | Express | MongoDB
           </p>
           <hr />
           <div class="project-links">
@@ -194,7 +217,7 @@
           <hr />
           <div class="project-links">
             <p class="project-sub">
-              <a href="https://www.google.com">View SITE</a
+              <a href="https://www.ctlaltdeceased.com">View SITE</a
               ><i class="fa-solid fa-computer"></i>
             </p>
             <p class="project-sub">|</p>
@@ -221,7 +244,7 @@
             bugs.
             <br />
             <br />
-            React | Javascript | Next.js | MongoDB
+            React | Next.js | MongoDB
           </p>
           <hr />
           <div class="project-links">
@@ -253,7 +276,7 @@
           <hr />
           <div class="project-links">
             <p class="project-sub">
-              <a href="./pages/family-planner.html">View Example</a>
+              <a href="./family-planner.html">View Example</a>
             </p>
             <p class="project-sub">|</p>
             <p class="project-sub">
@@ -309,7 +332,7 @@
             <input
               type="hidden"
               name="_next"
-              value="http://127.0.0.1:5500/pages/thanks.html"
+              value="http://scottfreestone.com/thanks.html"
             />
             <input
               type="hidden"
