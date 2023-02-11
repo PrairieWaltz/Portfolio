@@ -15,11 +15,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modals.css" />
     <script defer src="script.js"></script>
     <title>Scott Freestone</title>
   </head>
   <body>
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION NOTE -->
     <section class="navigation">
       <nav>
         <a href="#">
@@ -48,7 +49,7 @@
         </ul>
       </nav>
     </section>
-    <!-- HERO/LANDING -->
+    <!-- HERO/LANDING NOTE -->
     <section class="hero" id="hero">
       <div class="background">
         <div class="overlay"></div>
@@ -103,7 +104,7 @@
       <div class="headshot-container">
         <img
           class="headshot"
-          src="/images/portfolio hero (1).png"
+          src="/images/portfoliohero(1).png"
           alt="headshot"
         />
       </div>
@@ -146,23 +147,85 @@
       </div>
     </section>
 
-    <!-- MODAL -->
-
-    <!-- Trigger/Open The Modal -->
-    <!-- <button id="myBtn">Open Modal</button> -->
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Welcome to Our Website!</h2>
-        <p>We're glad you're here. Check out what we have to offer.</p>
-        <p>Click anywhere outside the modal to close it.</p>
+    <!-- MODALS NOTE -->
+    <section class="modals-section">
+      <!-- SPOTFINDER -->
+      <div id="modal-spotFinder" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closeSF">&times;</span>
+          <h2>SpotFinder</h2>
+          <p class="project-sub">
+            Looking for a great place to skate in a new city? <br />
+            This full-stack CRUD app uses Express, Node.js and MongoDB to create
+            a tailored full-stack experience for users. Log-in to create, edit
+            post and delete unique spots while rating other users submissions!
+          </p>
+        </div>
       </div>
-    </div>
 
-    <!-- PROJECTS -->
+      <!-- HUFCELLO -->
+      <div id="modal-Cello" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closeCello">&times;</span>
+          <h2>Hufnagle Cello Studio</h2>
+          <p class="project-sub">
+            Static landing page for working private cello studio. Design focus
+            for driving traffic to contact form and deeper info on teacher and
+            method. In the process of building enrolled student portal for
+            scheduling and private messaging.
+          </p>
+        </div>
+      </div>
+
+      <!-- SESSION -->
+      <div id="modal-Session" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closeSession">&times;</span>
+          <h2>Meet-Up Session Planner</h2>
+          <p class="project-sub">
+            Simple React based app to post skate session meet-ups. Can be added
+            to by anyone but only Admin has access to edit or delete items.
+            Project currently evolving to include basic auth, edit and delete
+            privilege when logged in and contact info for current mistakes and
+            bugs.
+          </p>
+        </div>
+      </div>
+
+      <!-- PLANNER -->
+      <div id="modal-Planner" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closePlanner">&times;</span>
+          <h2>Family Planner / Google Doc Clone</h2>
+          <p class="project-sub">
+            Google Doc clone that can be run on a local instance for family use.
+            Add, Edit or delete items in real time. Multiple people can be
+            working and editing the same doc simultaneously.
+          </p>
+        </div>
+      </div>
+
+      <!-- SPORKIFY -->
+      <div id="modal-Sporkify" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closeSporkify">&times;</span>
+          <h2>Sporkify Recipe Book</h2>
+          <p class="project-sub">
+            Search and bookmark favorite recipes from around the internet from
+            an index of 100's of common search terms. Query by ingredient or
+            dish name for widest results. Add your personal favorites to keep a
+            personal recipe book.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS NOTE -->
     <section class="project-section" id="projects">
       <!-- <div class="background2">
         <div class="overlay2"></div>
@@ -171,7 +234,7 @@
       <div class="project-container">
         <!-- SPOTFINDER -->
         <div class="project-card">
-          <span id="myBtn">
+          <span id="btnSF" class="sfImage">
             <img
               class="project-image"
               src="/images/spotFinderProjImgMain.png"
@@ -179,15 +242,11 @@
             />
           </span>
           <h4>SpotFinder Web App</h4>
-          <p class="project-sub">
-            Looking for a great place to skate in a new city? <br />
-            This full-stack CRUD app uses Express, Node.js and MongoDB to create
-            a tailored full-stack experience for users. Log-in to create, edit
-            post and delete unique spots while rating other users submissions!
-            <br />
-            <br />
-            Javascript | Express | MongoDB
-          </p>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>Javascript | Express | MongoDB</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
@@ -204,16 +263,15 @@
 
         <!-- HUFNAGLE CELLO -->
         <div class="project-card">
-          <img class="project-image" src="/images/KHCSlug.png" alt="" />
+          <span id="btnCello">
+            <img class="project-image" src="/images/KHCSlug.png" alt="" />
+          </span>
           <h4>Hufnagle Cello Studio</h4>
-          <p class="project-sub">
-            Static landing page for working private cello studio. Design focus
-            for driving traffic to contact form and deeper info on teacher and
-            method. In the process of building enrolled student portal for
-            scheduling and private messaging.<br />
-            <br />
-            HTML | CSS | Javascript
-          </p>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>JavaScript | HTML | CSS</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
@@ -230,22 +288,19 @@
 
         <!-- SESSION MEETUP -->
         <div class="project-card">
-          <img
-            class="project-image"
-            src="/images/sessionMeetupApp.png"
-            alt=""
-          />
+          <span id="btnSession">
+            <img
+              class="project-image"
+              src="/images/sessionMeetupApp.png"
+              alt=""
+            />
+          </span>
           <h4>Session Meet-Up</h4>
-          <p class="project-sub">
-            Simple React based app to post skate session meet-ups. Can be added
-            to by anyone but only Admin has access to edit or delete items.
-            Project currently evolving to include basic auth, edit and delete
-            privilege when logged in and contact info for current mistakes and
-            bugs.
-            <br />
-            <br />
-            React | Next.js | MongoDB
-          </p>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>React | Next.js | MongoDB</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
@@ -264,15 +319,19 @@
       <div class="project-container">
         <!-- FAMILY DOCS -->
         <div class="project-card">
-          <img class="project-image" src="/images/FamilyDoc-Main.png" alt="" />
-          <h4>Family Planner Google Docs Clone</h4>
-          <p class="project-sub">
-            Google Doc clone that can be run on a local instance for family use.
-            Add, Edit or delete items in real time. Multiple people can be
-            working and editing the same doc simultaneously. <br />
-            <br />
-            React | Javascript | Socket.io | Quill
-          </p>
+          <span id="btnPlanner">
+            <img
+              class="project-image"
+              src="/images/FamilyDoc-Main.png"
+              alt=""
+            />
+          </span>
+          <h4>Family Planner Doc</h4>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>React | Socket.io | Quill</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
@@ -288,20 +347,19 @@
 
         <!-- SPORKIFY -->
         <div class="project-card">
-          <img
-            class="project-image"
-            src="/images/sporkifyScreenshot.png"
-            alt=""
-          />
-          <h4>Sporkify</h4>
-          <p class="project-sub">
-            Search and bookmark favorite recipes from around the internet from
-            an index of 100's of common search terms. Query by ingredient or
-            dish name for widest results. Add your personal favorites to keep a
-            personal recipe book.<br />
-            <br />
-            Javascript | SASS | API
-          </p>
+          <span id="btnSporkify">
+            <img
+              class="project-image"
+              src="/images/sporkifyScreenshot.png"
+              alt=""
+            />
+          </span>
+          <h4>Sporkify Recipe Finder</h4>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>Javascript | SASS | Parcel</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
@@ -319,7 +377,7 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT NOTE -->
     <section class="contact-section" id="contact">
       <div class="contact">
         <div class="form" data-aos="fade-up">
@@ -371,11 +429,10 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer NOTE -->
     <footer class="footer" id="footer">
       <p>&copy;PrairieWaltz Design 2023</p>
       <p>scott@scottfreestone.com</p>
     </footer>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   </body>
 </html>
