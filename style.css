@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  /* color: whitesmoke; */
 }
 
 html {
@@ -19,6 +20,7 @@ nav {
   z-index: 100000;
   width: 100%;
   position: fixed;
+  /* color: whitesmoke; */
 }
 
 .logo {
@@ -26,28 +28,33 @@ nav {
   margin: 1rem 2rem;
 }
 
-ul {
+nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
   font-size: 1.5rem;
   cursor: pointer;
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 0.25rem;
 }
 
-ul a {
+a {
   text-decoration: none;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 li {
   margin-right: 3rem;
   text-decoration: none;
+  /* color: whitesmoke; */
 }
 
-#bars {
+/* li a {
   color: whitesmoke;
+} */
+
+#bars {
+  /* color: whitesmoke; */
   font-size: 1.25rem;
   padding: 0.5rem;
   display: none;
@@ -137,7 +144,7 @@ footer {
 
 /* HERO CARD NOTE */
 
-.hero-card {
+/* .hero-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +171,7 @@ footer {
 .hero-card-text p {
   font-size: 1rem;
   margin-top: 1rem;
-}
+} */
 
 .skills {
   font-size: 2.5rem;
