@@ -15,40 +15,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modals.css" />
     <script defer src="script.js"></script>
     <title>Scott Freestone</title>
   </head>
   <body>
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION NOTE -->
     <section class="navigation">
-      <nav>
-        <a href="#">
-          <img class="logo" src="/images/PWD LOGO(light).png" alt="logo" />
-        </a>
-        <ul>
-          <li>
-            <a href="https://github.com/PrairieWaltz"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/scott-freestone/">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/PrairieWaltz">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li>|</li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav">
+        <nav>
+          <a href="#">
+            <img class="logo" src="/images/pwdNavLogo.png" alt="logo" />
+          </a>
+          <ul>
+            <li>
+              <a href="https://github.com/PrairieWaltz"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/scott-freestone/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/PrairieWaltz">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>|</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <span id="btnNav"><i id="bars" class="fa-solid fa-bars"></i></span>
+        </nav>
+      </div>
     </section>
-    <!-- HERO/LANDING -->
+
+    <!-- HERO/LANDING NOTE -->
     <section class="hero" id="hero">
       <div class="background">
         <div class="overlay"></div>
@@ -98,6 +103,13 @@
     <!-- ABOUT -->
 
     <section class="about-section" id="about">
+      <div class="headshot-container">
+        <img
+          class="headshot"
+          src="/images/portfoliohero(1).png"
+          alt="headshot"
+        />
+      </div>
       <div class="information">
         <h2>Let's get to know each other...</h2>
 
@@ -135,14 +147,163 @@
           of those wandering eyes on the internet into sales for you.
         </p>
       </div>
-      <div class="headshot-container">
-        <img
-          class="headshot"
-          src="/images/portfolio hero (1).png"
-          alt="headshot"
-        />
+    </section>
+
+    <!-- MODALS NOTE -->
+    <section class="modals-section">
+      <!-- SPOTFINDER -->
+      <div id="modal-spotFinder" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-sf">
+          <span class="closeSF">&times;</span>
+          <h2>SpotFinder</h2>
+          <a href="https://spotfinder.herokuapp.com/"
+            ><p>www.spotfinder.com</p></a
+          >
+          <br /><br />
+          <div class="modalImg">
+            <img src="./images/spotFinderProjImgMain.png" />
+          </div>
+          <br />
+          <p class="project-sub">
+            In a new city with nowhere to skate? <br /><br />
+            This full-stack CRUD app uses Express, Node.js and MongoDB to create
+            a tailored experience for users. Log-in to create, edit, post and
+            delete unique spots while rating other users submissions!
+            <br /><br />
+            SpotFinder focuses on both public and private skateparks and does
+            NOT suggest blowing up hidden spots! Post with discretion and be
+            nice to each other.<br />
+            Already know all the best spots but need the closest shop? We've got
+            you covered there too! SpotFinder supports all LOCAL shops and we're
+            looking to add yours soon!!
+            <br />
+
+            <br />
+          </p>
+        </div>
+      </div>
+
+      <!-- HUFCELLO -->
+      <div id="modal-Cello" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-Cello">
+          <span class="closeCello">&times;</span>
+          <h2>Hufnagle Cello Studio</h2>
+          <a href="https://hufnaglecello.com/"><p>www.hufnaglecello.com</p></a>
+          <br /><br />
+          <div class="modalImg">
+            <img class="hufCelloVid" src="./images/HufnagleMainBanner.png" />
+          </div>
+          <br /><br />
+          <p class="project-sub">
+            Static landing page for working private cello studio. <br /><br />
+            Design focus for driving traffic to the contact form and to deeper
+            info on teacher and method. Clients main request was information
+            portal for current and potential students with potential to also
+            host dedicated and unique student log-in in the future. <br />
+          </p>
+        </div>
+      </div>
+
+      <!-- SESSION -->
+      <div id="modal-Session" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-Session">
+          <span class="closeSession">&times;</span>
+          <h2>Meet-Up Session Planner</h2>
+          <a href="https://react-meetup-app-snowy.vercel.app/"
+            ><p>www.sessionmeetup.com</p></a
+          >
+          <br /><br />
+          <div class="modalImg">
+            <img class="sessionMeetupVid" src="./images/sessionMeetupApp.png" />
+          </div>
+          <br /><br />
+          <p class="project-sub">
+            Simple React based app to post skate session meet-ups. Can be added
+            to by anyone but only Admin has access to edit or delete items.
+            Project currently evolving to include basic auth, edit and delete
+            privilege when logged in and contact info for current mistakes and
+            bugs.
+          </p>
+        </div>
+      </div>
+
+      <!-- PLANNER -->
+      <div id="modal-Planner" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-Planner">
+          <span class="closePlanner">&times;</span>
+          <h2>Family Planner / Google Doc Clone</h2>
+          <p>local instance only</p>
+          <br /><br />
+          <div class="modalImg">
+            <img
+              class="project-image"
+              src="/images/FamilyDoc-Main.png"
+              alt=""
+            />
+          </div>
+          <br /><br />
+          <p class="project-sub">
+            Google Doc clone that can be run on a local instance for family use.
+            Add, Edit or delete items in real time. Multiple people can be
+            working and editing the same doc simultaneously.
+          </p>
+        </div>
+      </div>
+
+      <!-- SPORKIFY -->
+      <div id="modal-Sporkify" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-Sporkify">
+          <span class="closeSporkify">&times;</span>
+          <h2>Sporkify Recipe Book</h2>
+          <a href="https://sporkify.netlify.app/"><p>www.sporkify.com</p></a>
+          <br /><br />
+          <div class="modalImg">
+            <img class="sporkifyVid" src="./images/sporkifyScreenshot.png" />
+          </div>
+          <br /><br />
+          <p class="project-sub">
+            Search and bookmark favorite recipes from around the internet from
+            an index of 100's of common search terms. Query by ingredient or
+            dish name for widest results. Add your personal favorites to keep a
+            personal recipe book.
+          </p>
+        </div>
+      </div>
+
+      <!-- CTF BLOG -->
+      <div id="modal-Blog" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-Blog">
+          <span class="closeBlog">&times;</span>
+          <h2>Capture The Flag Notes</h2>
+          <a href="https://ctlaltdeceased.com/"
+            ><p>www.ctlaltdeceased.com</p></a
+          >
+          <br /><br />
+          <div class="modalImg">
+            <img class="ctfVid" src="./images/CTFLandingWalkthrough(sm).gif" />
+          </div>
+          <br /><br />
+          <p class="project-sub">
+            Do you love playing CTF's?<br /><br />
+            Me too! My favorite downtime activity is learning a new exploit or
+            trying out a new machine. I whipped up this simple blog to keep
+            track of my personal notes and make them available to anyone else
+            looking at the same problems. Full disclosure, there ARE solutions
+            and flag's in plain view - enter at your own risk. <br /><br />
+            Oh, you'll need a password but you can't sign up for an account. No
+            problem, there's one in plain view on the landing page if you look
+            hard enough.
+          </p>
+        </div>
       </div>
     </section>
+
     <!-- PROJECTS -->
     <section class="project-section" id="projects">
       <!-- <div class="background2">
@@ -152,13 +313,19 @@
       <div class="project-container">
         <!-- SPOTFINDER -->
         <div class="project-card">
-          <img class="project-image" src="/images/Logo-3D.png" alt="" />
+          <span id="btnSF" class="sfImage">
+            <img
+              class="project-image"
+              src="/images/spotFinderProjImgMain.png"
+              alt=""
+            />
+          </span>
           <h4>SpotFinder Web App</h4>
           <p class="project-sub">
             Looking for a great place to skate in a new city? <br />
             This full-stack CRUD app uses Express, Node.js and MongoDB to create
             a tailored full-stack experience for users. Log-in to create, edit
-            post and delete unique spots while rating other users submissions!
+            post and delete unique spots while rating other users submissions.
             <br />
             <br />
             Javascript | Node.js | MongoDB
@@ -179,25 +346,86 @@
 
         <!-- HUFNAGLE CELLO -->
         <div class="project-card">
-          <img class="project-image" src="/images/KHCSlug.png" alt="" />
+          <span id="btnCello">
+            <img
+              class="project-image"
+              src="/images/HufnagleMainBanner.png"
+              alt=""
+            />
+          </span>
           <h4>Hufnagle Cello Studio</h4>
-          <p class="project-sub">
-            Static landing page for working private cello studio. Design focus
-            for driving traffic to contact form and deeper info on teacher and
-            method. In the process of building enrolled student portal for
-            scheduling and private messaging.<br />
-            <br />
-            HTML | CSS | Javascript
-          </p>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>JavaScript | HTML | CSS</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
-              <a href="https://www.google.com">View SITE</a
+              <a href="https://www.hufnaglecello.com">View SITE</a
               ><i class="fa-solid fa-computer"></i>
             </p>
             <p class="project-sub">|</p>
             <p class="project-sub">
-              <a href="https://www.github.com">View CODE</a
+              <a href="https://www.github.com/PrairieWaltz/hufnagle_cello"
+                >View CODE</a
+              ><i class="fa-brands fa-github"></i>
+            </p>
+          </div>
+        </div>
+
+        <!-- CTF BLOG -->
+        <div class="project-card">
+          <span id="btnBlog">
+            <img
+              class="project-image"
+              src="/images/CTFBlogHomepage(2).gif"
+              alt=""
+            />
+          </span>
+          <h4>Capture The Flag Blog</h4>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>JavaScript | HTML | CSS</p>
+          </div>
+          <hr />
+          <div class="project-links">
+            <p class="project-sub">
+              <a href="https://www.ctlaltdeceased.com">View SITE</a
+              ><i class="fa-solid fa-computer"></i>
+            </p>
+            <p class="project-sub">|</p>
+            <p class="project-sub">
+              <a href="https://www.github.com/PrairieWaltz/CTFblog">View CODE</a
+              ><i class="fa-brands fa-github"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <!-- FAMILY DOCS -->
+        <div class="project-card">
+          <span id="btnPlanner">
+            <img
+              class="project-image"
+              src="/images/FamilyDoc-Main.png"
+              alt=""
+            />
+          </span>
+          <h4>Family Planner Doc</h4>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>React | Socket.io | Quill</p>
+          </div>
+          <hr />
+          <div class="project-links">
+            <p class="project-sub">
+              <a
+                href="https://github.com/PrairieWaltz/FamilyDocs-Socket.io-serverSide"
+                >View CODE</a
               ><i class="fa-brands fa-github"></i>
             </p>
           </div>
@@ -205,22 +433,19 @@
 
         <!-- SESSION MEETUP -->
         <div class="project-card">
-          <img
-            class="project-image"
-            src="/images/sessionMeetupApp.png"
-            alt=""
-          />
+          <span id="btnSession">
+            <img
+              class="project-image"
+              src="/images/sessionMeetupApp.png"
+              alt=""
+            />
+          </span>
           <h4>Session Meet-Up</h4>
-          <p class="project-sub">
-            Simple React based app to post skate session meet-ups. Can be added
-            to by anyone but only Admin has access to edit or delete items.
-            Project currently evolving to include basic auth, edit and delete
-            privilege when logged in and contact info for current mistakes and
-            bugs.
-            <br />
-            <br />
-            React | Javascript | Next.js | MongoDB
-          </p>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>React | Next.js | MongoDB</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
@@ -234,49 +459,22 @@
             </p>
           </div>
         </div>
-      </div>
-
-      <div class="project-container">
-        <!-- FAMILY DOCS -->
-        <div class="project-card">
-          <img class="project-image" src="/images/FamilyDoc-Main.png" alt="" />
-          <h4>Family Planner Google Docs Clone</h4>
-          <p class="project-sub">
-            Google Doc clone that can be run on a local instance for family use.
-            Add, Edit or delete items in real time. Multiple people can be
-            working and editing the same doc simultaneously. <br />
-            <br />
-            React | Javascript | Socket.io | Quill
-          </p>
-          <hr />
-          <div class="project-links">
-            <p class="project-sub">
-              <a href="./pages/family-planner.html">View Example</a>
-            </p>
-            <p class="project-sub">|</p>
-            <p class="project-sub">
-              <a href="https://github.com/">View CODE</a
-              ><i class="fa-brands fa-github"></i>
-            </p>
-          </div>
-        </div>
 
         <!-- SPORKIFY -->
         <div class="project-card">
-          <img
-            class="project-image"
-            src="/images/sporkifyScreenshot.png"
-            alt=""
-          />
-          <h4>Sporkify</h4>
-          <p class="project-sub">
-            Search and bookmark favorite recipes from around the internet from
-            an index of 100's of common search terms. Query by ingredient or
-            dish name for widest results. Add your personal favorites to keep a
-            personal recipe book.<br />
-            <br />
-            Javascript | SASS | API
-          </p>
+          <span id="btnSporkify">
+            <img
+              class="project-image"
+              src="/images/sporkifyScreenshot.png"
+              alt=""
+            />
+          </span>
+          <h4>Sporkify Recipe Finder</h4>
+          <h6>Click Image for More Info</h6>
+          <div class="project-sub">
+            <p>Built With:</p>
+            <p>Javascript | SASS | Parcel</p>
+          </div>
           <hr />
           <div class="project-links">
             <p class="project-sub">
@@ -294,7 +492,7 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT NOTE -->
     <section class="contact-section" id="contact">
       <div class="contact">
         <div class="form" data-aos="fade-up">
@@ -307,7 +505,7 @@
             <input
               type="hidden"
               name="_next"
-              value="http://127.0.0.1:5500/pages/thanks.html"
+              value="http://scottfreestone.com/thanks.html"
             />
             <input
               type="hidden"
@@ -346,11 +544,10 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer NOTE -->
     <footer class="footer" id="footer">
       <p>&copy;PrairieWaltz Design 2023</p>
       <p>scott@scottfreestone.com</p>
     </footer>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   </body>
 </html>

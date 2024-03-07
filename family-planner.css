@@ -1,0 +1,64 @@
+.fp-background {
+  background-image: url(/images/extrasPageImgPortfolio.png);
+  /* width: 100%; */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  position: relative;
+}
+
+.fp-background .thanks-overlay {
+  background-color: hsl(240, 52%, 8%);
+  /* width: 100%; */
+  height: 100%;
+  opacity: 0.7;
+}
+
+.fp-hero {
+  height: 100vh;
+  color: whitesmoke;
+}
+
+.fp-hero-landing {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.fp-hero-text {
+  margin: 0rem 0rem 10rem 15rem;
+}
+
+.fp-hero-text h2 {
+  font-size: 3rem;
+}
+
+.fp-hero-text h4 {
+  font-size: 1.5rem;
+  /* margin-top: 0.25rem; */
+  margin-left: 15rem;
+}
+
+.fp-btn {
+  text-align: center;
+  list-style: none;
+  background-color: #9a8c98;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 80px;
+  margin-left: 26rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.fp-btn:hover {
+  background-color: #4a4e69;
+  color: whitesmoke;
+}

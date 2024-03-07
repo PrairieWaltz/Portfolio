@@ -1,0 +1,321 @@
+/* SPOTFINDER */
+
+section a {
+  text-decoration: none;
+  color: #010830;
+}
+
+section video {
+  width: 60%;
+}
+
+.modal h2 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.modal p {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+.modalImg img {
+  width: 50%;
+}
+
+#modal-spotFinder {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000000; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-sf {
+  background-color: #4a4e69ee;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4a4e69;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.closeSF {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeSF:hover,
+.closeSF:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* .spotFinderVid {
+  width: 60%;
+} */
+
+/* HUFCELLO */
+
+#modal-Cello {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000000; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-Cello {
+  background-color: #4a4e69;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4a4e69;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.closeCello {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeCello:hover,
+.closeCello:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* SESSION */
+
+#modal-Session {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000000; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-Session {
+  background-color: #4a4e69;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4a4e69;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.closeSession {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeSession:hover,
+.closeSession:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* PLANNER */
+
+#modal-Planner {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000000; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-Planner {
+  background-color: #4a4e69;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4a4e69;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.closePlanner {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closePlanner:hover,
+.closePlanner:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* SPORKIFY */
+
+#modal-Sporkify {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000000; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-Sporkify {
+  background-color: #4a4e69;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4a4e69;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.closeSporkify {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeSporkify:hover,
+.closeSporkify:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CTF BLOG */
+
+#modal-Blog {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000000; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-Blog {
+  background-color: #4a4e69;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4a4e69;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.closeBlog {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBlog:hover,
+.closeBlog:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  section video {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section a {
+    font-size: 0.75em;
+  }
+
+  section video {
+    width: 100%;
+  }
+
+  .modal h2 {
+    font-size: 2.25em;
+  }
+
+  .modal p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section a {
+    font-size: 0.75em;
+  }
+
+  section video {
+    width: 100%;
+  }
+
+  .modal h2 {
+    font-size: 2em;
+  }
+
+  .modal p {
+    font-size: 1em;
+  }
+
+  .modalImg img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}

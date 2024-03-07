@@ -16,7 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #07072b;
-  z-index: 10000;
+  z-index: 100000;
   width: 100%;
   position: fixed;
 }
@@ -33,6 +33,7 @@ ul {
   font-size: 1.5rem;
   cursor: pointer;
   color: whitesmoke;
+  padding: 0.25rem;
 }
 
 ul a {
@@ -43,6 +44,13 @@ ul a {
 li {
   margin-right: 3rem;
   text-decoration: none;
+}
+
+#bars {
+  color: whitesmoke;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  display: none;
 }
 
 /* FOOTER */
@@ -69,12 +77,12 @@ footer {
 /* HERO IMAGE AND OVERLAY NOTE */
 
 .background {
-  background-image: url(/images/abstractHero.jpg);
+  background-image: url(/images/PortfolioHeroMain.png);
   /* width: 100%; */
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
 }
 
@@ -85,7 +93,7 @@ footer {
   opacity: 0.8;
 }
 
-/* HERO LANDING NOTE */
+/* HERO LANDING NOTE NOTE*/
 
 .hero {
   height: 100vh;
@@ -282,7 +290,7 @@ footer {
 .project-section h4 {
   color: #f0e0dc;
   font-size: 1.75rem;
-  margin: 0.5rem 0rem;
+  margin: 0.25rem 0rem;
 }
 
 .project-sub {
@@ -324,15 +332,19 @@ footer {
 
 .project-card {
   width: 27rem;
-  height: 30rem;
+  /* height: 30rem; */
   border-radius: 8px;
   border: 1px solid whitesmoke;
   box-shadow: 15px 15px 15px #010116;
   gap: 1rem;
 }
 
+.project-card h6 {
+  color: #eed0c0;
+}
+
 .project-text-header {
-  color: #f2e9e4;
+  color: #dad1cd;
   font-size: 4rem;
   padding-top: 2.85rem;
   padding-bottom: 3rem;
@@ -615,7 +627,7 @@ footer {
 
   .project-card {
     width: 20rem;
-    height: 30rem;
+    /* height: 30rem; */
     border-radius: 8px;
     border: 1px solid whitesmoke;
     box-shadow: 15px 15px 15px #010116;
@@ -691,48 +703,72 @@ footer {
 }
 
 @media screen and (max-width: 769px) {
-  /* NAV */
-
-  .logo {
-    width: 20%;
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #07072b;
+    z-index: 10000;
+    width: 100%;
+    position: fixed;
   }
 
-  ul {
+  .logo {
+    width: 25%;
+    margin: 0.35rem 0.35rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
     font-size: 0.75rem;
+    cursor: pointer;
+    color: whitesmoke;
+    padding: 1rem;
   }
 
   li {
-    margin-right: 2rem;
+    margin-right: 1rem;
+  }
+  /* NAV */
+
+  li {
+    margin-right: 1rem;
   }
 
   .background {
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    /* width: 100%; */
   }
 
   .background .overlay {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
   }
 
   /* HERO PAGE */
 
   .hero-landing {
-    flex-direction: row;
-    height: 100vh;
-    width: 100%;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 50%;
     justify-content: center;
     position: absolute;
-    top: 60%;
-    left: 35%;
+    top: 55%;
+    left: 20%;
   }
 
   .hero-card {
-    width: 85%;
-    top: 67%;
-    left: 50%;
-    height: 45%;
-    margin-top: 2rem;
+    width: 50%;
+    top: 45%;
+    left: 70%;
+    height: 60%;
+    margin-top: 1rem;
+  }
+
+  .hero-text {
+    padding-top: 1.5rem;
   }
 
   .hero-text h1 {
@@ -754,7 +790,7 @@ footer {
   }
 
   .hero-card-text h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 0.25rem;
   }
 
@@ -763,13 +799,13 @@ footer {
   }
 
   .skills {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-top: 1.25rem;
     margin-left: 1.25rem;
   }
 
   .skills2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-top: 1.25rem;
     margin-left: 1.25rem;
   }
@@ -782,13 +818,13 @@ footer {
   }
 
   .hero-btn {
-    width: 110px;
+    width: 90px;
     margin-top: 0.2rem;
     font-size: 1rem;
   }
 
   .hero-btn2 {
-    width: 110px;
+    width: 90px;
     font-size: 1rem;
     margin-top: 0.2rem;
   }
@@ -826,10 +862,11 @@ footer {
 
   .project-container {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
+    flex-wrap: wrap;
   }
 
   .project-text-header {
@@ -838,8 +875,8 @@ footer {
   }
 
   .project-card {
-    width: 20rem;
-    height: 32rem;
+    width: 30rem;
+    /* height: auto; */
   }
 
   .project-card h4 {
@@ -866,10 +903,11 @@ footer {
     align-items: center;
     margin-top: 1rem;
     gap: 1rem;
+    height: auto;
   }
 
   .project-image {
-    width: 70%;
+    width: 80%;
     margin-top: 1.5rem;
     border: 1px solid #22223b;
     /* box-shadow: 5px 5px 30px #534d4ccb; */
@@ -879,33 +917,509 @@ footer {
   /* CONTACT */
 
   .contact .form {
-    width: 60%;
+    width: 100%;
   }
 
   .contact .form h2 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     padding-bottom: 0.5rem;
   }
 
   .contact .form .submit input::placeholder {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .contact .form .submit textarea::placeholder {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .contact .form .submit button {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   /* FOOTER */
 
   .footer {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .footer p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  nav {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #bars {
+    padding: 0.5em;
+    /* color: whitesmoke; */
     font-size: 1rem;
+    display: flex;
+  }
+
+  /* HERO PAGE */
+
+  .hero-landing {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  }
+
+  .hero-card {
+    width: 75%;
+    height: 43%;
+    top: 72%;
+    left: 50%;
+    margin-top: 1rem;
+    padding: 0.25em;
+  }
+
+  .hero-text {
+    padding-top: 1rem;
+  }
+
+  .hero-card-text {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text .last {
+    font-size: 3.25rem;
+    margin-top: 1rem;
+  }
+
+  .hero-card-text h1 {
+    font-size: 1.1rem;
+  }
+
+  .hero-card-text p {
+    font-size: 0.6rem;
+  }
+
+  /* HERO BUTTONS */
+
+  .hero-btn {
+    /* width: 85px; */
+    margin-top: 0.2rem;
+    font-size: 0.75rem;
+  }
+
+  .hero-btn2 {
+    /* width: 85px; */
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+  }
+
+  /* ABOUT */
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 2.15rem;
+  }
+
+  .about-section h3 {
+    font-size: 1rem;
+  }
+
+  .about-section p {
+    font-size: 0.85rem;
+  }
+
+  .headshot {
+    width: 100%;
+    margin-left: 10rem;
+    margin-top: -1rem;
+    /* padding-bottom: -5rem; */
+  }
+
+  .information {
+    width: 90%;
+    z-index: 100;
+    margin-top: -3rem;
+  }
+
+  /* PROJECTS */
+
+  .project-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .project-text-header {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  .project-card {
+    width: 17rem;
+    /* height: auto; */
+  }
+
+  .project-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .project-sub {
+    font-size: 0.8rem;
+  }
+
+  .project-links p {
+    font-size: 0.8rem;
+  }
+
+  .project-sub a {
+    font-size: 0.9rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .project-image {
+    width: 80%;
+    margin-top: 1.5rem;
+    border: 1px solid #22223b;
+    /* box-shadow: 5px 5px 30px #534d4ccb; */
+    border-radius: 4px;
+  }
+
+  /* CONTACT */
+
+  .contact .form {
+    width: 100%;
+  }
+
+  .contact .form h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contact .form .submit input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit textarea::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit button {
+    font-size: 0.75rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 1rem 1rem;
+  }
+
+  .footer p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  /* HERO PAGE */
+
+  .hero-landing {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  }
+
+  .hero-card {
+    width: 75%;
+    height: 45%;
+    top: 72%;
+    left: 50%;
+    margin-top: 1rem;
+    padding: 0.5em;
+  }
+
+  .hero-text {
+    padding-top: 0.5rem;
+  }
+
+  .hero-card-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-card-text h1 {
+    font-size: 1rem;
+  }
+
+  .hero-card-text p {
+    font-size: 0.55rem;
+  }
+
+  /* HERO BUTTONS */
+
+  .hero-btn {
+    /* width: 85px; */
+    margin-top: 0.1rem;
+    font-size: 0.7rem;
+  }
+
+  .hero-btn2 {
+    /* width: 85px; */
+    font-size: 0.7rem;
+    margin-top: 0.1rem;
+  }
+
+  /* PROJECTS */
+
+  .project-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .project-text-header {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  .project-card {
+    width: 17rem;
+    /* height: auto; */
+  }
+
+  .project-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .project-sub {
+    font-size: 0.8rem;
+  }
+
+  .project-links p {
+    font-size: 0.8rem;
+  }
+
+  .project-sub a {
+    font-size: 0.9rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .project-image {
+    width: 80%;
+    margin-top: 1.5rem;
+    border: 1px solid #22223b;
+    /* box-shadow: 5px 5px 30px #534d4ccb; */
+    border-radius: 4px;
+  }
+
+  /* CONTACT */
+
+  .contact .form {
+    width: 100%;
+  }
+
+  .contact .form h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contact .form .submit input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit textarea::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit button {
+    font-size: 0.75rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 1rem 1rem;
+  }
+
+  .footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* HERO PAGE */
+
+  .hero-landing {
+    left: 30%;
+  }
+
+  .hero-card {
+    width: 85%;
+    height: 45%;
+    top: 74%;
+    left: 50%;
+    margin-top: 0.5rem;
+    padding: 0.5em;
+  }
+
+  .hero-card-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-card-text h1 {
+    font-size: 1rem;
+  }
+
+  .hero-card-text p {
+    font-size: 0.55rem;
+  }
+
+  /* HERO BUTTONS */
+
+  .hero-btn {
+    /* width: 85px; */
+    margin-top: 0.1rem;
+    font-size: 0.7rem;
+  }
+
+  .hero-btn2 {
+    /* width: 85px; */
+    font-size: 0.7rem;
+    margin-top: 0.1rem;
+  }
+
+  /* PROJECTS */
+
+  .project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* margin-top: 1rem; */
+    padding: 0;
+  }
+
+  .project-text-header {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  .project-card {
+    width: 15rem;
+  }
+
+  .project-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .project-sub {
+    font-size: 0.8rem;
+  }
+
+  .project-links p {
+    font-size: 0.8rem;
+  }
+
+  .project-sub a {
+    font-size: 0.9rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .project-image {
+    width: 80%;
+    margin-top: 1.5rem;
+    border: 1px solid #22223b;
+    /* box-shadow: 5px 5px 30px #534d4ccb; */
+    border-radius: 4px;
+  }
+
+  /* CONTACT */
+
+  .contact .form {
+    width: 100%;
+  }
+
+  .contact .form h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contact .form .submit input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit textarea::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact .form .submit button {
+    font-size: 0.75rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 1rem 1rem;
+  }
+
+  .footer p {
+    font-size: 0.7rem;
   }
 }
